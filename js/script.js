@@ -23,12 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-<<<<<<< HEAD
   const navLinks = Array.from(document.querySelectorAll('.nav-menu a'))
     .filter((link) => link.hash && link.hash !== '#audit-form-modal');
-=======
-  const navLinks = Array.from(document.querySelectorAll('.nav-menu a'));
->>>>>>> 29946fecb831a3b0fdf906626db759d399cbc0f1
 
   if (currentPage === 'index.html' && navLinks.some((link) => link.hash)) {
     const sections = navLinks
@@ -115,7 +111,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-<<<<<<< HEAD
   if (window.location.hash === '#audit-form-modal') {
     openAuditModal();
   }
@@ -215,47 +210,6 @@ document.addEventListener('DOMContentLoaded', () => {
     brevoAuditForm.addEventListener('submit', (event) => {
       syncBrevoTrackingFields();
 
-=======
-  const contactForm = document.getElementById('contactForm');
-  if (contactForm) {
-    contactForm.addEventListener('submit', (event) => {
-      event.preventDefault();
-
-      const submitBtn = contactForm.querySelector('button[type="submit"]');
-      const originalText = submitBtn.textContent;
-      submitBtn.textContent = 'Envoi en cours...';
-      submitBtn.disabled = true;
-
-      fetch(contactForm.action, {
-        method: 'POST',
-        body: new FormData(contactForm),
-        headers: { 'Accept': 'application/json' }
-      })
-        .then((response) => {
-          if (!response.ok) throw new Error('Erreur lors de l\'envoi');
-
-          contactForm.reset();
-          submitBtn.textContent = 'Message envoyé avec succès';
-        })
-        .catch((error) => {
-          console.error('Erreur:', error);
-          submitBtn.textContent = 'Erreur - réessayez';
-        })
-        .finally(() => {
-          setTimeout(() => {
-            submitBtn.textContent = originalText;
-            submitBtn.disabled = false;
-          }, 4000);
-        });
-    });
-  }
-
-  const brevoAuditForm = document.getElementById('brevoAuditForm');
-  if (brevoAuditForm) {
-    const status = brevoAuditForm.querySelector('.form-status');
-
-    brevoAuditForm.addEventListener('submit', (event) => {
->>>>>>> 29946fecb831a3b0fdf906626db759d399cbc0f1
       const trap = brevoAuditForm.querySelector('input[name="email_address_check"]');
       if (trap && trap.value.trim()) {
         event.preventDefault();
