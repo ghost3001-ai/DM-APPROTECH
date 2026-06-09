@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DM APPROTECH | Groupes électrogènes & énergie solaire au Cameroun</title>
-  <meta name="description" content="DM APPROTECH accompagne les projets de groupes électrogènes et solutions solaires hybrides au Cameroun: étude, modification, installation, mise en service, maintenance et SAV à Douala.">
-  <meta name="keywords" content="groupe électrogène Cameroun, énergie Douala, installation groupe électrogène, maintenance groupe, énergie solaire Cameroun, DM APPROTECH">
-  <meta property="og:title" content="DM APPROTECH | Solutions énergétiques au Cameroun">
-  <meta property="og:description" content="La puissance maîtrisée, la continuité garantie. Étude, modification, installation, maintenance et énergie solaire hybride à Douala.">
+  <title>DM APPROTECH | Groupes électrogènes, maintenance & solaire hybride au Cameroun</title>
+  <meta name="description" content="DM APPROTECH accompagne les entreprises camerounaises avec groupes électrogènes, maintenance proactive, monitoring IoT, audit énergétique et solutions solaires hybrides à Douala.">
+  <meta name="keywords" content="groupe électrogène Cameroun, maintenance groupe électrogène Douala, monitoring énergétique IoT, solaire hybride Cameroun, audit énergétique, DM APPROTECH">
+  <meta property="og:title" content="DM APPROTECH | Solutions énergétiques intégrées au Cameroun">
+  <meta property="og:description" content="Vente, étude, installation, maintenance, monitoring IoT et solaire hybride pour éliminer les pertes liées aux coupures électriques.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="images/Hero.png">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -16,419 +16,574 @@
 <body>
   <header class="header">
     <div class="container">
-      <a class="logo" href="index.html" aria-label="DM APPROTECH">
-        <span class="logo-mark">DM</span>
+      <a class="logo logo-with-image" href="#accueil" aria-label="DM APPROTECH">
+        <img src="images/Logo Dm_approtech.png" alt="DM APPROTECH" class="logo-img">
         <span class="logo-text">DM APPROTECH <span>Solutions énergétiques</span></span>
       </a>
       <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
-      <ul class="nav-menu">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="etude-conception.html">Étude & conception</a></li>
-        <li><a href="modification.html">Modification</a></li>
-        <li><a href="installation.html">Installation & MES</a></li>
-        <li><a href="energie-solaire.html">Énergie solaire</a></li>
-        <li><a href="a-propos.html">À propos</a></li>
-        <li><a href="contact.html">Contact / Devis</a></li>
+      <ul class="nav-menu" aria-label="Navigation principale">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#valeur">Notre Valeur</a></li>
+        <li><a href="#resultat">Resultalt</a></li>
+        <li><a href="#clients">Clients Temoignages</a></li>
+        <li><a href="#contact-devis">Contact/Devis</a></li>
+        <li><a class="nav-cta js-audit-open" href="#audit-form-modal">Devis gratuit</a></li>
       </ul>
     </div>
   </header>
 
   <main>
-    <section class="hero">
-      <img src="images/Hero.png" alt="Groupe électrogène professionnel - DM APPROTECH" class="hero-image">
+    <section class="hero hero-home" id="accueil">
+      <img src="images/Hero.png" alt="Groupe électrogène supervisé par un technicien DM APPROTECH" class="hero-bg-image">
+      <div class="hero-shade"></div>
       <div class="container hero-inner">
         <div class="hero-copy">
-          <p class="eyebrow">Ingénierie franco-camerounaise · Douala</p>
-          <h1>La puissance maîtrisée, la continuité garantie.</h1>
-          <p class="lead">DM APPROTECH conçoit, modifie, installe et maintient des solutions de groupes électrogènes pour les sites qui ne peuvent pas se permettre l’arrêt: industries, hôpitaux, hôtels, télécoms, chantiers et administrations.</p>
+          <p class="eyebrow">🇨🇲 N°1 Solutions Énergétiques au Cameroun</p>
+          <h1>Éliminez les coupures et les pertes énergétiques.</h1>
+          <p class="lead">DM APPROTECH met en avant les groupes électrogènes FG Wilson pour les entreprises qui exigent une alimentation fiable, maintenable et dimensionnée pour le terrain camerounais.</p>
           <ul class="hero-points">
-            <li>Étude de criticité, dimensionnement kVA et autonomie réelle.</li>
-            <li>Adaptation tropicalisée pour chaleur, humidité, poussière et usage intensif.</li>
-            <li>Un interlocuteur local, du devis à la mise en service et au SAV.</li>
+            <li>Groupes FG Wilson diesel ouverts ou capotés, du secours tertiaire aux sites industriels critiques.</li>
+            <li>Dimensionnement, installation, ATS, mise en service, formation et dossier d'exploitation.</li>
+            <li>Maintenance proactive, pièces, monitoring et audit gratuit pour réduire les pertes.</li>
           </ul>
           <div class="actions">
-            <a class="btn" href="contact.html">Demander un devis</a>
-            <a class="btn btn-secondary" href="etude-conception.html">Voir les services</a>
+            <a class="btn btn-audit js-audit-open" href="#audit-form-modal">Demander un audit gratuit</a>
           </div>
         </div>
-
+        <aside class="monitoring-dashboard" aria-label="Tableau de bord monitoring en temps réel">
+          <div class="dashboard-head">
+            <span>Tableau de bord — Monitoring en temps réel</span>
+            <b>LIVE</b>
+          </div>
+          <div class="dashboard-metrics">
+            <div><strong>−70%</strong><span>Réduction des pannes</span></div>
+            <div><strong>−30%</strong><span>Économies carburant</span></div>
+            <div><strong>99.9%</strong><span>Disponibilité garantie</span></div>
+            <div><strong>24h/7</strong><span>Assistance technique</span></div>
+          </div>
+          <div class="generator-status">
+            <div>
+              <strong>Groupe électrogène principal — Opérationnel</strong>
+              <span>Supervision en temps réel incluse dans vos contrats</span>
+            </div>
+            <b>OK</b>
+          </div>
+          <div class="signal-lines" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+          </div>
+        </aside>
       </div>
     </section>
 
-    <section class="section section-soft">
+    <section class="section section-soft" aria-label="Indicateurs rapides">
       <div class="container">
-        <div class="stat-strip">
-          <div class="stat-item"><strong>24h</strong><span>objectif de réponse devis sur dossier exploitable</span></div>
-          <div class="stat-item"><strong>48h</strong><span>visite chantier possible à Douala selon disponibilité</span></div>
-          <div class="stat-item"><strong>12 mois</strong><span>garantie pièces et main-d’œuvre selon offre validée</span></div>
-          <div class="stat-item"><strong>360°</strong><span>étude, modification, installation, formation, maintenance</span></div>
+        <div class="home-proof-layout">
+          <div class="stat-strip">
+            <div class="stat-item"><strong>FG Wilson</strong><span>marque premium pour les groupes électrogènes</span></div>
+            <div class="stat-item"><strong>6.8-2500</strong><span>kVA disponibles dans la gamme diesel FG Wilson</span></div>
+            <div class="stat-item"><strong>24/7</strong><span>alertes et suivi possible sur sites critiques</span></div>
+            <div class="stat-item"><strong>1</strong><span>partenaire pour l'étude, l'installation, la maintenance et le solaire</span></div>
+          </div>
+          <aside class="fg-summary-card">
+            <img src="images/Logo FG Wilson.png" alt="FG Wilson" class="fg-logo">
+            <strong>FG Wilson au cœur de vos projets énergie.</strong>
+            <span>Sélection, fourniture, installation, mise en service et suivi local avec un seul partenaire technique.</span>
+            <div class="mini-metrics">
+              <div><b>6.8-2500</b><small>kVA selon gamme FG Wilson</small></div>
+              <div><b>Prime</b><small>ou standby selon usage</small></div>
+            </div>
+          </aside>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section fg-section" id="fg-wilson">
+      <div class="container">
+        <div class="fg-layout">
+          <div class="fg-copy">
+            <p class="eyebrow">Partenaire produit stratégique</p>
+            <h2>FG Wilson, la référence groupes électrogènes qui vous accompagne partout.</h2>
+            <p>La gamme FG Wilson couvre les besoins de secours et d'alimentation principale, avec des groupes diesel ouverts ou capotés, des options de contrôle, des pièces et une logique de support sur tout le cycle de vie du groupe.</p>
+            <div class="fg-badges">
+              <span>Diesel 6.8 à 2 500 kVA</span>
+              <span>Prime & standby</span>
+              <span>Ouvert ou insonorisé</span>
+              <span>ATS, contrôle et maintenance</span>
+            </div>
+            <div class="actions">
+              <a class="btn js-audit-open" href="#audit-form-modal">Dimensionner mon FG Wilson</a>
+              <a class="btn btn-secondary-dark" href="#chantier-media">Voir les preuves terrain</a>
+            </div>
+          </div>
+          <figure class="fg-visual">
+            <img src="images/Groupes électrogènes.png" alt="Groupe électrogène FG Wilson avec intervention DM APPROTECH" loading="lazy">
+            <figcaption>
+              <img src="images/Logo FG Wilson.png" alt="" aria-hidden="true">
+              <span>Vente, installation, modification, monitoring et maintenance au Cameroun.</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
       <div class="container">
         <div class="section-head center">
-          <p class="eyebrow">Expertises critiques</p>
-          <h2>Nous ne vendons pas un groupe. Nous concevons votre solution énergétique.</h2>
-          <p>Chaque projet est cadré techniquement avant l’achat ou la modification, puis suivi jusqu’aux essais de charge, à la formation utilisateur et à la remise des documents d’exploitation.</p>
+          <p class="eyebrow">Services</p>
+          <h2>Une offre complète, un seul partenaire.</h2>
+          <p>De l'installation à la maintenance intelligente, nous assurons la continuité de votre alimentation électrique.</p>
         </div>
-        <div class="grid-3">
+
+        <div class="grid-3 core-services">
           <article class="card accent-card">
             <span class="icon">01</span>
-            <h3>Étude & conception</h3>
-            <p>Cahier des charges, bilan de puissance, courants de démarrage, charges critiques, implantation, acoustique, ventilation et conformité.</p>
-            <a class="service-link" href="etude-conception.html">Découvrir l’ingénierie</a>
+            <h3>Étude & Conception</h3>
+            <p>Bilan de puissance, criticité des charges, autonomie, ventilation, acoustique, sécurité, implantation et retour sur investissement.</p>
           </article>
           <article class="card accent-card">
             <span class="icon">02</span>
-            <h3>Modification sur mesure</h3>
-            <p>Réservoir 24h/48h, commande Deep Sea ou COMAP, conversion tension/fréquence, tropicalisation, insonorisation et sécurité.</p>
-            <a class="service-link" href="modification.html">Voir les adaptations</a>
+            <h3>Installation & MES</h3>
+            <p>Livraison, manutention, raccordement, essais en charge, paramétrage ATS, procès-verbal et formation des opérateurs.</p>
           </article>
           <article class="card accent-card">
             <span class="icon">03</span>
-            <h3>Installation & mise en service</h3>
-            <p>Livraison, grutage, raccordement, essais en charge, paramétrage, procès-verbal, formation et accompagnement maintenance.</p>
-            <a class="service-link" href="installation.html">Sécuriser le chantier</a>
+            <h3>Modification</h3>
+            <p>Réservoir additionnel, tropicalisation, modernisation commande, protections, insonorisation et adaptation aux contraintes du site.</p>
           </article>
-          <article class="card accent-card">
-            <span class="icon">04</span>
+        </div>
+
+        <div class="offer-grid">
+          <article class="offer-card">
+            <span class="offer-icon">⚡</span>
+            <h3>Vente Groupes Électrogènes FG Wilson</h3>
+            <p>Solutions diesel FG Wilson pour sites tertiaires, industriels, santé, hôtellerie et télécommunications, dimensionnées selon charge réelle et autonomie attendue.</p>
+            <ul class="feature-list">
+              <li>Groupes diesel ouverts ou capotés</li>
+              <li>ATS (commutation automatique)</li>
+              <li>Batteries, chargeurs et protections</li>
+              <li>Pièces et consommables compatibles</li>
+            </ul>
+          </article>
+          <article class="offer-card">
+            <span class="offer-icon">🔧</span>
             <h3>Maintenance & SAV</h3>
-            <p>Maintenance préventive et curative, pièces critiques, rapports d’intervention, formation opérateur et assistance terrain après la vente.</p>
-            <a class="service-link" href="contact.html">Souscrire un contrat</a>
-          </article>
-          <article class="card accent-card">
-            <span class="icon">05</span>
-            <h3>Énergie solaire hybride</h3>
-            <p>Solaire autonome, hybride ou en autoconsommation pour réduire le gasoil, limiter le bruit et renforcer l’indépendance énergétique.</p>
-            <a class="service-link" href="energie-solaire.html">Découvrir le solaire</a>
-          </article>
-          <article class="card accent-card">
-            <span class="icon">06</span>
-            <h3>Audit & reconditionnement</h3>
-            <p>Diagnostic de groupe existant, remise à niveau, modernisation des commandes, optimisation carburant et prolongation de durée de vie.</p>
-            <a class="service-link" href="contact.html">Demander un audit</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-soft">
-      <div class="container">
-        <div class="grid-2">
-          <div class="section-head">
-            <p class="eyebrow">Positionnement</p>
-            <h2>L’expertise française au service de l’industrie camerounaise</h2>
-            <p>DM APPROTECH associe la réactivité terrain d’une équipe basée à Douala à une culture d’ingénierie orientée fiabilité, conformité, économie de carburant et continuité opérationnelle.</p>
-          </div>
-          <div class="card">
-            <h3>Ce qui fait la différence</h3>
+            <p>Contrats de maintenance préventive et corrective avec intervention d'urgence sous 2 heures dans la zone de Douala.</p>
             <ul class="feature-list">
-              <li>Audit flash des équipements sensibles avant recommandation.</li>
-              <li>Dimensionnement exact pour éviter surconsommation, sous-puissance et pannes au démarrage.</li>
-              <li>Solutions adaptées aux climats chauds, humides, poussiéreux ou corrosifs.</li>
-              <li>Coordination entre bureau d’études, atelier, logistique, chantier et maintenance.</li>
-              <li>Transparence: devis détaillé, périmètre clair, documents techniques remis.</li>
+              <li>Maintenance préventive planifiée</li>
+              <li>Maintenance corrective urgence</li>
+              <li>Contrats annuels flexibles</li>
+              <li>Historique digitalisé</li>
             </ul>
+          </article>
+          <article class="offer-card">
+            <span class="offer-icon">📡</span>
+            <h3>Monitoring Intelligent IoT</h3>
+            <p>Supervision en temps réel de votre parc énergétique depuis n'importe où: alertes automatiques, rapports et maintenance prédictive.</p>
+            <ul class="feature-list">
+              <li>Tableau de bord temps réel</li>
+              <li>Alertes et notifications</li>
+              <li>Gestion multi-sites</li>
+              <li>Rapports de performance</li>
+            </ul>
+          </article>
+          <article class="offer-card">
+            <span class="offer-icon">☀️</span>
+            <h3>Solutions Solaires Hybrides</h3>
+            <p>Installation de systèmes solaires résidentiels et industriels, panneaux, onduleurs et batteries pour réduire vos coûts énergétiques.</p>
+            <ul class="feature-list">
+              <li>Audit solaire offert</li>
+              <li>Panneaux & onduleurs premium</li>
+              <li>Batteries lithium et gel</li>
+              <li>Hybridation avec groupes électrogènes</li>
+            </ul>
+          </article>
+          <article class="offer-card">
+            <span class="offer-icon">📊</span>
+            <h3>Audit Énergétique</h3>
+            <p>Diagnostic complet de votre infrastructure énergétique pour identifier les optimisations et économies potentielles.</p>
+            <ul class="feature-list">
+              <li>Analyse de consommation</li>
+              <li>Identification des pertes</li>
+              <li>Plan d'optimisation</li>
+              <li>ROI estimé fourni</li>
+            </ul>
+          </article>
+          <article class="offer-card">
+            <span class="offer-icon">📦</span>
+            <h3>Pièces & Consommables</h3>
+            <p>Stock permanent de pièces critiques d'origine: huiles, filtres, courroies, alternateurs et consommables essentiels.</p>
+            <ul class="feature-list">
+              <li>Stock local disponible</li>
+              <li>Livraison sur site</li>
+              <li>Pièces d'origine garanties</li>
+              <li>Catalogue de 100+ références</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="solar-service-panel" id="service-solaire">
+          <img src="images/Installation solaire avec groupe en appoint.png" alt="Installation solaire avec groupe en appoint" loading="lazy">
+          <div class="solar-service-copy">
+            <p class="eyebrow">Energie solaire dans Services</p>
+            <h3>Le solaire réduit le gasoil. Le groupe sécurise la continuité.</h3>
+            <p>Nous dimensionnons des systèmes hybrides où les panneaux alimentent les charges en priorité, les batteries stabilisent l'autonomie et le groupe FG Wilson démarre seulement en appoint lorsque le besoin réel l'exige.</p>
+            <div class="solar-service-list">
+              <span>Audit solaire offert</span>
+              <span>Panneaux & onduleurs premium</span>
+              <span>Batteries lithium et gel</span>
+              <span>Hybridation avec groupes électrogènes</span>
+            </div>
+            <a class="btn js-audit-open" href="#audit-form-modal">Demander l'audit solaire</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section section-soft" id="chantier-media">
       <div class="container">
         <div class="section-head center">
-          <p class="eyebrow">Maintenance, SAV & reconditionnement</p>
-          <h2>La continuité se gagne aussi après la mise en service</h2>
-          <p>Un groupe électrogène fiable n’est pas seulement bien choisi. Il est suivi, testé, documenté et amélioré avant que les pannes ne deviennent critiques.</p>
+          <p class="eyebrow">Preuves terrain</p>
+          <h2>FG Wilson en atelier, en livraison et en exploitation.</h2>
+          <p>La galerie a été condensée en carrousel animé pour montrer les visuels nécessaires sans allonger inutilement la page: gamme, stock, chantier, logistique, maintenance, contrôle électrique et solaire hybride.</p>
         </div>
-        <div class="grid-3">
-          <article class="card">
-            <span class="icon">MP</span>
-            <h3>Maintenance préventive</h3>
-            <p>Contrôles périodiques, vidange, filtres, batteries, courroies, essais de démarrage, vérification alarmes et rapport après intervention.</p>
-          </article>
-          <article class="card">
-            <span class="icon">DI</span>
-            <h3>Diagnostic & dépannage</h3>
-            <p>Recherche de défauts électriques ou mécaniques, contrôle carburant, alternateur, régulation, refroidissement, commandes et protections.</p>
-          </article>
-          <article class="card">
-            <span class="icon">RC</span>
-            <h3>Reconditionnement</h3>
-            <p>Remise à niveau de groupes existants, modernisation Deep Sea ou COMAP, fiabilisation, optimisation carburant et préparation à la revente ou au redéploiement.</p>
-          </article>
-        </div>
-        <div class="cta-inline">
-          <p>Vous avez déjà un groupe ? Envoyez la marque, la puissance, l’âge, les symptômes et quelques photos. DM APPROTECH analyse la priorité d’intervention.</p>
-          <a class="btn" href="contact.html">Demander un diagnostic</a>
-        </div>
-      </div>
-    </section>
 
-    <section class="section section-soft">
-      <div class="container">
-        <div class="section-head center">
-          <p class="eyebrow">Secteurs accompagnés</p>
-          <h2>Des réponses adaptées à chaque métier</h2>
-          <p>Industrie, santé, hôtellerie, télécoms, chantiers et administrations n’ont pas les mêmes contraintes. DM APPROTECH adapte le dimensionnement, l’autonomie, le niveau sonore, la supervision et la documentation à votre exploitation réelle.</p>
-        </div>
-        <div class="reference-strip">
-          <span>Industrie</span>
-          <span>Santé & hôpitaux</span>
-          <span>Hôtellerie</span>
-          <span>Télécommunications</span>
-          <span>BTP & chantiers</span>
-          <span>Administrations</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="section-head center">
-          <p class="eyebrow">Arguments par secteur</p>
-          <h2>Chaque métier a ses contraintes. Votre énergie doit les respecter.</h2>
-        </div>
-        <div class="sector-grid">
-          <div class="sector-chip"><strong>Industrie</strong><span>Courants de démarrage, moteurs lourds, harmoniques, continuité de production et protection des équipements sensibles.</span></div>
-          <div class="sector-chip"><strong>Santé & hôpitaux</strong><span>Secours des charges critiques, basculement automatique, essais documentés, consignes de sécurité et disponibilité permanente.</span></div>
-          <div class="sector-chip"><strong>Télécommunications</strong><span>Autonomie longue durée, supervision, alertes, redondance et maintenance préventive pour limiter les déplacements d’urgence.</span></div>
-          <div class="sector-chip"><strong>Hôtellerie</strong><span>Insonorisation, stabilité tension/fréquence, confort client, réduction des odeurs et disponibilité de nuit.</span></div>
-          <div class="sector-chip"><strong>BTP & chantiers</strong><span>Groupes mobiles, protection poussière, autonomie adaptée, mise en route rapide et changement de site facilité.</span></div>
-          <div class="sector-chip"><strong>Administrations</strong><span>Dossiers techniques, garanties contractuelles, conformité, traçabilité et documentation de réception officielle.</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="grid-2">
-          <div class="section-head">
-            <p class="eyebrow">Énergie solaire hybride</p>
-            <h2>Le soleil comme premier carburant, le gasoil comme secours.</h2>
-            <p>DM APPROTECH intègre des solutions solaires autonomes, hybrides ou en autoconsommation pour réduire la consommation de gasoil, limiter le bruit et renforcer votre indépendance énergétique.</p>
-            <div class="actions">
-              <a class="btn" href="energie-solaire.html">Découvrir le solaire</a>
-              <a class="btn btn-secondary" href="contact.html">Étudier mon site</a>
+        <div class="project-carousel" data-carousel aria-label="Galerie professionnelle DM APPROTECH">
+          <div class="carousel-stage">
+            <div class="carousel-track">
+              <article class="carousel-slide is-active">
+                <img src="images/image%20%26%20video/Screenshot%202026-06-08%20145708.png" alt="Distribution de groupes électrogènes FG Wilson" loading="lazy">
+                <div><span>FG Wilson</span><h3>Gamme et distribution</h3><p>Visuel de crédibilité pour présenter la sélection FG Wilson, l'étude de puissance et la fourniture adaptée au besoin réel.</p></div>
+              </article>
+              <article class="carousel-slide">
+                <img src="images/image%20%26%20video/Screenshot%202026-06-08%20150016.png" alt="Stock de groupes électrogènes FG Wilson" loading="lazy">
+                <div><span>Stock</span><h3>Disponibilité et préparation</h3><p>Le stock visible rassure les décideurs sur la capacité à sourcer, préparer et livrer rapidement les équipements.</p></div>
+              </article>
+              <article class="carousel-slide">
+                <img src="images/image%20%26%20video/Screenshot%202026-06-08%20145436.png" alt="Groupe FG Wilson capoté et ouvert" loading="lazy">
+                <div><span>Choix technique</span><h3>Capoté ou ouvert selon site</h3><p>Le bon format dépend du bruit, de la ventilation, de l'accès maintenance et de l'environnement d'exploitation.</p></div>
+              </article>
+              <article class="carousel-slide">
+                <img src="images/image%20%26%20video/Screenshot%202026-06-08%20145502.png" alt="Groupe FG Wilson capoté insonorisé" loading="lazy">
+                <div><span>Confort</span><h3>Capotage insonorisé</h3><p>Pour hôtellerie, santé et tertiaire, l'intégration acoustique devient un critère aussi important que la puissance.</p></div>
+              </article>
+              <article class="carousel-slide">
+                <img src="images/Groupe en fonctionnemen.png" alt="Groupe électrogène ouvert en fonctionnement" loading="lazy">
+                <div><span>Exploitation</span><h3>Inspection moteur et commande</h3><p>Maintenance préventive, relevés, consommables et contrôle d'alarmes pour garder le groupe réellement disponible.</p></div>
+              </article>
+              <article class="carousel-slide">
+                <img src="images/Groupe électrogène installé chez un client.png" alt="Groupe électrogène installé chez un client" loading="lazy">
+                <div><span>Installation</span><h3>Pose et raccordement sur site</h3><p>Implantation, sécurité, câblage, essais en charge et réception technique documentée.</p></div>
+              </article>
+              <article class="carousel-slide">
+                <img src="images/Livraison sur site.jpeg" alt="Livraison d'un groupe électrogène sur site" loading="lazy">
+                <div><span>Logistique</span><h3>Livraison organisée</h3><p>La préparation de site réduit les risques de retard, de choc matériel et de mauvaise manutention.</p></div>
+              </article>
+              <article class="carousel-slide">
+                <img src="images/image%20%26%20video/Image.jpeg" alt="Groupe électrogène transporté sur camion" loading="lazy">
+                <div><span>Transport</span><h3>Arrivée camion contrôlée</h3><p>Traçabilité, vérification visuelle et protection de l'équipement avant la mise en place.</p></div>
+              </article>
+              <article class="carousel-slide">
+                <img src="images/image%20%26%20video/Image%20(2).jpeg" alt="Groupe protégé avant déchargement" loading="lazy">
+                <div><span>Réception</span><h3>Protection avant déchargement</h3><p>Chaque étape compte: emballage, contrôle, déchargement et validation avant raccordement.</p></div>
+              </article>
+              <article class="carousel-slide">
+                <img src="images/Tableau de commande.png" alt="Tableau de commande groupe électrogène" loading="lazy">
+                <div><span>Contrôle</span><h3>Commande, alarmes et sécurité</h3><p>Un tableau lisible permet d'exploiter les alarmes, les défauts, les heures et les essais sans improvisation.</p></div>
+              </article>
+              <article class="carousel-slide">
+                <img src="images/Batteries, protections, inverseur de source.png" alt="Batteries protections et inverseur de source" loading="lazy">
+                <div><span>ATS</span><h3>Batteries, protections et inverseur</h3><p>La continuité électrique repose autant sur les auxiliaires que sur le groupe lui-même.</p></div>
+              </article>
+              <article class="carousel-slide">
+                <img src="images/Câblage propre.png" alt="Câblage électrique propre" loading="lazy">
+                <div><span>Qualité</span><h3>Câblage propre et maintenance rapide</h3><p>Un câblage maîtrisé limite les défauts, facilite les interventions et sécurise la bascule réseau-groupe.</p></div>
+              </article>
+              <article class="carousel-slide">
+                <img src="images/Réservoir additionnel.png" alt="Réservoir additionnel groupe électrogène" loading="lazy">
+                <div><span>Autonomie</span><h3>Réservoir et optimisation carburant</h3><p>L'audit dimensionne l'autonomie utile et repère les pertes de gasoil évitables.</p></div>
+              </article>
+              <article class="carousel-slide">
+                <img src="images/Techniciens en intervention.png" alt="Technicien en intervention maintenance groupe" loading="lazy">
+                <div><span>Maintenance</span><h3>Intervention préventive et corrective</h3><p>Contrats, historique digitalisé, urgence et suivi des opérations sur les sites critiques.</p></div>
+              </article>
+              <article class="carousel-slide">
+                <img src="images/Ingénieur avec plan ou tableau électrique.png" alt="Ingénieur devant tableau électrique" loading="lazy">
+                <div><span>Étude</span><h3>Diagnostic technique et plan d'action</h3><p>Les recommandations sont liées au risque, au coût de l'inaction et au retour sur investissement.</p></div>
+              </article>
+              <article class="carousel-slide">
+                <img src="images/Installation solaire avec groupe en appoint.png" alt="Installation solaire avec groupe en appoint" loading="lazy">
+                <div><span>Solaire hybride</span><h3>Groupe en appoint intelligent</h3><p>Le solaire réduit les heures groupe, la batterie stabilise l'autonomie et le groupe protège la continuité.</p></div>
+              </article>
+              <article class="carousel-slide">
+                <img src="images/Onduleur hybride + batteries.png" alt="Onduleur hybride et batteries" loading="lazy">
+                <div><span>Stockage</span><h3>Onduleur hybride et batteries</h3><p>Une architecture propre permet de prioriser solaire, réseau, batterie et groupe selon le scénario énergétique.</p></div>
+              </article>
+              <article class="carousel-slide">
+                <img src="images/Réalisations & Chantier.png" alt="Réalisations et chantiers DM APPROTECH" loading="lazy">
+                <div><span>Réalisations</span><h3>Chantiers et preuves locales</h3><p>La page garde les visuels qui construisent la confiance et retire les doublons qui ralentissent la lecture.</p></div>
+              </article>
             </div>
           </div>
-          <div class="card">
-            <h3>Solaire + groupe: l’hybride intelligent</h3>
-            <ul class="feature-list">
-              <li>Le solaire alimente les charges dès que l’ensoleillement est disponible.</li>
-              <li>La batterie assure le silence, la stabilité et l’autonomie hors coupure.</li>
-              <li>Le groupe ne démarre qu’en appoint, lorsque le besoin réel l’exige.</li>
-              <li>La télégestion suit production, consommation, autonomie et niveau gasoil.</li>
-            </ul>
+          <div class="carousel-orbit-status" aria-live="polite">
+            <span data-carousel-counter>1 / 18</span>
+            <div class="carousel-progress"><span data-carousel-progress></span></div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="section-head center">
-          <p class="eyebrow">Garanties opérationnelles</p>
-          <h2>Des engagements qui parlent aux décideurs</h2>
-        </div>
-        <div class="argument-table">
-          <div class="argument-row"><strong>Direction générale</strong><p>Continuité d’activité, réduction du risque d’arrêt, interlocuteur unique et visibilité sur les délais.</p></div>
-          <div class="argument-row"><strong>Direction technique</strong><p>Calculs de charge, protections, stabilité tension/fréquence, ventilation, acoustique, mise à la terre et essais documentés.</p></div>
-          <div class="argument-row"><strong>Direction financière</strong><p>Solutions neuves ou reconditionnées, devis ferme, options de location ou maintenance forfaitaire selon besoin.</p></div>
-          <div class="argument-row"><strong>Maintenance & HSE</strong><p>Formation opérateur, consignes sécurité, pièces critiques, contrat SAV et rapport d’intervention après chaque passage.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="section-head center">
-          <p class="eyebrow">Méthode</p>
-          <h2>Une méthode industrielle, claire et vérifiable</h2>
-        </div>
-        <div class="grid-4 process">
-          <article class="card"><h3>Analyser</h3><p>Charges critiques, puissance utile, autonomie, contraintes de site, bruit, sécurité et accès.</p></article>
-          <article class="card"><h3>Dimensionner</h3><p>kVA, facteur de charge, démarrages moteurs, extension future et économie de carburant.</p></article>
-          <article class="card"><h3>Réaliser</h3><p>Modification atelier, tropicalisation, logistique, manutention, câblage et paramétrage.</p></article>
-          <article class="card"><h3>Garantir</h3><p>Essais, rapport, formation, attestation, maintenance préventive et disponibilité des pièces.</p></article>
+        <div class="video-reel" aria-label="Vidéos terrain">
+          <article>
+            <video src="images/image%20%26%20video/Video%20(2).mp4" poster="images/image%20%26%20video/Image%20(2).jpeg" controls muted preload="metadata"></video>
+            <div><h3>Déchargement protégé</h3><p>Préparation, protection et réception avant installation.</p></div>
+          </article>
+          <article>
+            <video src="images/image%20%26%20video/Video.mp4" poster="images/image%20%26%20video/Image.jpeg" controls muted preload="metadata"></video>
+            <div><h3>Transport sur site</h3><p>Traçabilité des mouvements et sécurisation du matériel.</p></div>
+          </article>
+          <article>
+            <video src="images/image%20%26%20video/stock%20geniwatt.mp4" poster="images/image%20%26%20video/Screenshot%202026-06-08%20150016.png" controls muted preload="metadata"></video>
+            <div><h3>Stock disponible</h3><p>Gamme, préparation et expédition vers les sites clients.</p></div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-soft">
+    <section class="section section-soft" id="valeur">
       <div class="container">
-        <div class="quote-panel">
-          <p>DM APPROTECH: l’énergie que vous méritez, la fiabilité que vous attendez.</p>
-          <span>Achetez un groupe. Recevez une solution: dimensionnée, installée, testée et maintenable.</span>
+        <div class="value-layout">
+          <div class="section-head">
+            <p class="eyebrow">Notre différence</p>
+            <h2>La première solution 100% intégrée au Cameroun.</h2>
+            <blockquote>"Nous aidons les entreprises camerounaises à éliminer les pertes liées aux coupures électriques grâce à des solutions énergétiques intelligentes combinant groupes électrogènes, maintenance proactive, monitoring connecté et solaire hybride."</blockquote>
+          </div>
+          <div class="value-list">
+            <div class="value-item"><span>✓</span><div><strong>Offre intégrée: vente + maintenance + monitoring + solaire</strong><p>Un seul partenaire pour toute votre infrastructure énergétique.</p></div></div>
+            <div class="value-item"><span>✓</span><div><strong>Expertise adaptée aux réalités camerounaises</strong><p>12 ans d'expérience terrain à Douala et dans les grandes villes.</p></div></div>
+            <div class="value-item"><span>✓</span><div><strong>Maintenance prédictive basée sur les données IoT</strong><p>Anticipez les pannes avant qu'elles n'impactent votre production.</p></div></div>
+            <div class="value-item"><span>✓</span><div><strong>Intervention garantie sous contrat SLA</strong><p>Délais et pénalités contractuelles si non-respect.</p></div></div>
+            <div class="value-item"><span>✓</span><div><strong>Approche orientée ROI client</strong><p>Chaque recommandation est mesurée par son retour sur investissement.</p></div></div>
+          </div>
         </div>
-      </div>
-    </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="section-head center">
-          <p class="eyebrow">Réalisations & preuves terrain</p>
-          <h2>Nous vous montrons le chantier, pas seulement la promesse</h2>
-          <p>Les photos de groupes, d’atelier, de livraison, de salle technique et d’installation finie renforcent immédiatement la confiance d’un décideur B2B.</p>
-        </div>
-        <div class="project-gallery">
-          <figure>
-            <img src="images/Groupe électrogène installé chez un client.png" alt="Groupe électrogène installé chez un client" loading="lazy">
-            <figcaption>Groupe installé chez client</figcaption>
-          </figure>
-          <figure>
-            <img src="images/Groupe en fonctionnemen.png" alt="Groupe électrogène en fonctionnement" loading="lazy">
-            <figcaption>Essai en fonctionnement</figcaption>
-          </figure>
-          <figure>
-            <img src="images/Techniciens en intervention.png" alt="Techniciens DM APPROTECH en intervention" loading="lazy">
-            <figcaption>Intervention terrain</figcaption>
-          </figure>
-          <figure>
-            <img src="images/Câblage propre.png" alt="Câblage propre d’une installation énergétique" loading="lazy">
-            <figcaption>Câblage et finition</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-soft">
-      <div class="container">
-        <div class="cta-band">
+        <div class="launch-offer">
           <div>
-            <h2>Les coupures n’attendent pas. Nous non plus.</h2>
-            <p>Envoyez la puissance souhaitée, la localisation, l’usage, l’autonomie et les contraintes de votre site. Nous revenons vers vous avec une réponse structurée.</p>
+            <p class="eyebrow">Offre irrésistible de lancement</p>
+            <h2>Ce que vous recevez gratuitement</h2>
+            <p>Un diagnostic concret pour comprendre vos risques, vos pertes, votre consommation et vos économies possibles avant tout engagement.</p>
           </div>
-          <a class="btn btn-light" href="contact.html">Préparer la demande</a>
+          <div class="free-grid">
+            <span>🔍 Audit énergétique complet de votre parc</span>
+            <span>📋 Diagnostic technique initial offert</span>
+            <span>🎓 Formation gratuite de vos opérateurs</span>
+            <span>📱 30 jours de monitoring dashboard offerts</span>
+            <span>⛽ Rapport d'optimisation carburant</span>
+            <span>📑 Check-list maintenance préventive</span>
+            <span>💬 Assistance WhatsApp prioritaire dédiée</span>
+          </div>
+          <a class="btn js-audit-open" href="#audit-form-modal">Obtenir mon audit gratuit →</a>
+          <small>Sans engagement · Réponse sous 24h.</small>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="resultat">
       <div class="container">
         <div class="section-head center">
-          <p class="eyebrow">Confiance & crédibilité</p>
-          <h2>Ils nous ont fait confiance</h2>
+          <p class="eyebrow">Résultats prouvés</p>
+          <h2>Des chiffres qui parlent d'eux-mêmes.</h2>
+          <p>Nos clients constatent des résultats mesurables dès les premières semaines d'engagement.</p>
         </div>
-        <div class="clients-showcase">
-          <img src="images/Clients & Secteurs.png" alt="Logos clients et secteurs servis par DM APPROTECH" class="clients-image">
+        <div class="results-grid">
+          <div class="result-card"><strong>−70%</strong><span>Réduction des pannes imprévues avec la maintenance préventive</span></div>
+          <div class="result-card"><strong>−30%</strong><span>Économies sur la consommation de carburant grâce au monitoring</span></div>
+          <div class="result-card"><strong>+40%</strong><span>Allongement de la durée de vie des équipements avec notre maintenance</span></div>
+          <div class="result-card"><strong>&lt;2h</strong><span>Délai d'intervention maximum garanti par contrat SLA</span></div>
+          <div class="result-card"><strong>24/7</strong><span>Surveillance des alertes critiques pour les sites connectés</span></div>
+          <div class="result-card"><strong>30 j</strong><span>Monitoring offert pour visualiser vos pertes et priorités d'action</span></div>
+        </div>
+
+        <div class="proof-grid">
+          <article>
+            <h3>Moins d'arrêts non planifiés</h3>
+            <p>Les visites programmées, l'historique digitalisé et les seuils d'alerte permettent d'intervenir avant la panne critique.</p>
+          </article>
+          <article>
+            <h3>Carburant mieux maîtrisé</h3>
+            <p>Le monitoring révèle les surconsommations, les heures de marche inutiles et les groupes mal chargés.</p>
+          </article>
+          <article>
+            <h3>Décisions plus rapides</h3>
+            <p>Chaque rapport met en face le risque, le coût de l'inaction, le plan technique et le ROI attendu.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-soft">
+    <section class="section section-soft" id="clients">
       <div class="container">
         <div class="section-head center">
-          <p class="eyebrow">Guide visuel</p>
-          <h2>NOS ACTIONS EN IMAGE</h2>
-          <p>Découvrez nos installations récentes au Cameroun. Chaque projet est une preuve de notre engagement qualité.</p>
+          <p class="eyebrow">Clients & Témoignages</p>
+          <h2>Ils nous font confiance.</h2>
+          <p>Industries, cliniques, hôtels, télécommunications, administrations et sites critiques recherchent la même chose: une énergie disponible, mesurable et maintenable.</p>
         </div>
-        <div class="image-guide-grid">
-          <article class="image-guide-card">
-            <img src="images/Livraison sur site.jpeg" alt="Livraison sécurisée d’un groupe électrogène sur site" loading="lazy">
-            <div>
-              <h3>Livraison sur site : votre groupe arrive en sécurité</h3>
-              <p>Chez DM APPROTECH, la livraison ne se limite pas à un dépôt de matériel. Nous orchestrons chaque étape pour que votre groupe arrive à bon port, à l’heure, et prêt à être installé.</p>
-              <ul class="visual-list">
-                <li><strong>Préparation logistique</strong> : vérification des accès, cheminement, sol, largeur, hauteur et contraintes de manutention.</li>
-                <li><strong>Déchargement sécurisé</strong> : coordination transport, grutage ou manutention selon le poids et l’emplacement.</li>
-                <li><strong>Réception claire</strong> : contrôle visuel, positionnement et validation avec le client.</li>
-              </ul>
-              <p><strong>Résultat :</strong> un équipement livré sans improvisation, prêt pour le raccordement et les essais.</p>
-            </div>
+
+        <div class="clients-panel">
+          <img src="images/Clients & Secteurs.png" alt="Clients et secteurs accompagnés par DM APPROTECH" class="clients-image">
+          <div class="sector-grid compact-sectors">
+            <div class="sector-chip"><strong>Industrie</strong><span>Production continue, moteurs lourds, charges critiques et coût d'arrêt élevé.</span></div>
+            <div class="sector-chip"><strong>Santé</strong><span>Blocs, froid médical, équipements sensibles et bascule automatique documentée.</span></div>
+            <div class="sector-chip"><strong>Hôtellerie</strong><span>Confort client, silence, stabilité tension/fréquence et disponibilité de nuit.</span></div>
+            <div class="sector-chip"><strong>Télécoms</strong><span>Autonomie longue durée, alertes, multi-sites et réduction des déplacements urgents.</span></div>
+            <div class="sector-chip"><strong>BTP</strong><span>Groupes mobiles, poussière, accès chantier et mise en route rapide.</span></div>
+            <div class="sector-chip"><strong>Administrations</strong><span>Traçabilité, dossiers techniques, garanties et réception officielle.</span></div>
+          </div>
+        </div>
+
+        <div class="testimonials">
+          <article class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Depuis le contrat de maintenance avec DM APPROTECH, nos groupes électrogènes n'ont eu aucune panne critique en 18 mois. Le tableau de bord de monitoring nous donne une visibilité totale."</p>
+            <div class="person"><span>DK</span><div><strong>Directeur Kouaté</strong><small>DG — Usine agroalimentaire, Douala</small></div></div>
           </article>
-          <article class="image-guide-card">
-            <img src="images/Groupes électrogènes 6.jpeg" alt="Groupe électrogène suivi en maintenance préventive" loading="lazy">
-            <div>
-              <h3>Maintenance préventive</h3>
-              <p>Un groupe électrogène doit être suivi avant la panne, surtout lorsqu’il protège une activité critique.</p>
-              <ul class="visual-list">
-                <li><strong>Visites programmées</strong> : vidange, filtres, batteries, courroies, niveaux et essais de démarrage.</li>
-                <li><strong>Rapport d’intervention</strong> : mesures, alarmes, photos, anomalies et recommandations.</li>
-                <li><strong>Pièces critiques</strong> : anticipation des consommables et composants sensibles.</li>
-              </ul>
-              <p><strong>Résultat :</strong> moins d’arrêts imprévus, une meilleure disponibilité et une maintenance documentée.</p>
-            </div>
+          <article class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"L'intervention d'urgence à 22h un dimanche a sauvé notre nuit et notre réputation. En moins de 90 minutes, nos équipes étaient sur site et le groupe était reparti. Professionnalisme rare."</p>
+            <div class="person"><span>MB</span><div><strong>Mme Belibi</strong><small>Directrice — Clinique médicale, Douala</small></div></div>
           </article>
-          <article class="image-guide-card">
-            <img src="images/Ingénieur avec plan ou tableau électrique.png" alt="Ingénieur préparant un plan électrique" loading="lazy">
-            <div>
-              <h3>Équipe & expertise</h3>
-              <p>Chaque projet est préparé avec une lecture technique du besoin, du site et des contraintes d’exploitation.</p>
-              <ul class="visual-list">
-                <li><strong>Étude</strong> : charges critiques, puissance utile, démarrages moteurs et autonomie attendue.</li>
-                <li><strong>Coordination</strong> : bureau d’études, atelier, logistique, chantier et maintenance.</li>
-                <li><strong>Accompagnement</strong> : explications, choix techniques et documents utiles à l’exploitation.</li>
-              </ul>
-              <p><strong>Résultat :</strong> une solution dimensionnée pour le terrain, pas seulement choisie sur catalogue.</p>
-            </div>
+          <article class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Le système de monitoring IoT nous a permis de détecter une surconsommation carburant qui nous coûtait 800 000 FCFA par mois. Récupéré en 3 semaines. ROI immédiat."</p>
+            <div class="person"><span>PN</span><div><strong>Paul Ngandam</strong><small>Responsable Technique — Groupe hôtelier</small></div></div>
           </article>
-          <article class="image-guide-card">
-            <img src="images/Panneaux solaires sur toiture (3).png" alt="Panneaux solaires pour la page énergie solaire hybride" loading="lazy">
-            <div>
-              <h3>Solaire hybride</h3>
-              <p>Le solaire hybride réduit la dépendance au gasoil tout en conservant la sécurité d’un groupe d’appoint.</p>
-              <ul class="visual-list">
-                <li><strong>Panneaux solaires</strong> : couverture des charges de jour selon l’ensoleillement et la surface disponible.</li>
-                <li><strong>Batteries lithium LFP</strong> : stockage pour le soir, le matin et les microcoupures.</li>
-                <li><strong>Groupe conservé</strong> : appoint automatique en cas de forte charge ou météo défavorable.</li>
-              </ul>
-              <p><strong>Résultat :</strong> économies de gasoil, moins de bruit et continuité renforcée.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact-devis">
+      <div class="container">
+        <div class="contact-layout">
+          <div class="section-head">
+            <p class="eyebrow">Contact/Devis</p>
+            <h2 id="audit-gratuit">Demander un audit gratuit</h2>
+            <p>Remplissez le formulaire pour entrer dans le tunnel de vente audit: qualification, diagnostic, plan d'optimisation, estimation ROI et proposition technique.</p>
+            <div class="contact-list">
+              <p class="contact-item"><strong>Commercial</strong><a href="tel:+237676291773">+237 676 291 773</a> / <a href="tel:+237690279966">+237 690 279 966</a></p>
+              <p class="contact-item"><strong>Email</strong><a href="mailto:rescom_dmapprotechsarl@yahoo.fr">rescom_dmapprotechsarl@yahoo.fr</a></p>
+              <p class="contact-item"><strong>Adresse</strong>371, rue Sylvani AKWA, BP 15180 Douala, Cameroun</p>
             </div>
-          </article>
-          <article class="image-guide-card">
-            <img src="images/Installation solaire avec groupe en appoint.png" alt="Chantier et réalisation pour preuves de terrain" loading="lazy">
+          </div>
+
+          <aside class="audit-funnel-card">
+            <img src="images/image%20%26%20video/Screenshot%202026-06-08%20145708.png" alt="Gamme FG Wilson disponible pour audit énergétique" loading="lazy">
             <div>
-              <h3>Installation solaire avec groupe en appoint</h3>
-              <p>Une installation hybride bien conçue arbitre automatiquement entre solaire, batterie et groupe.</p>
-              <ul class="visual-list">
-                <li><strong>Priorité solaire</strong> : les charges sont alimentées dès que la production est disponible.</li>
-                <li><strong>Stockage batterie</strong> : stabilité, silence et autonomie lorsque le soleil baisse.</li>
-                <li><strong>Télégestion</strong> : suivi production, consommation, autonomie batterie et appoint groupe.</li>
+              <h3>Audit gratuit puis tunnel de vente Brevo.</h3>
+              <p>Au clic, le formulaire s'ouvre. Après configuration de l'URL publique Brevo, chaque demande entre dans votre CRM pour qualification, relance, devis et suivi commercial.</p>
+              <ul class="feature-list">
+                <li>Qualification du besoin: groupe, solaire, maintenance ou monitoring.</li>
+                <li>Récupération des contacts dans Brevo via formulaire public.</li>
+                <li>Relance commerciale structurée: audit, diagnostic, devis, contrat.</li>
               </ul>
-              <p><strong>Résultat :</strong> indépendance énergétique plus forte et groupe utilisé seulement quand c’est nécessaire.</p>
+              <button class="btn js-audit-open" type="button">Ouvrir le formulaire d'audit</button>
             </div>
-          </article>
-          <article class="image-guide-card">
-            <img src="images/Câblage propre.png" alt="Câblage propre et repéré dans une armoire électrique" loading="lazy">
-            <div>
-              <h3>Câblage propre – installation électrique soignée</h3>
-              <p>Une armoire propre facilite la maintenance, réduit les risques et inspire confiance lors de la réception.</p>
-              <ul class="visual-list">
-                <li><strong>Protections calibrées</strong> : disjoncteurs, sectionneurs, parafoudre et protections différentielles adaptés.</li>
-                <li><strong>Repérage clair</strong> : borniers, départs, câbles et protections identifiés.</li>
-                <li><strong>Finition maintenable</strong> : cheminement propre, colliers, gaines et accès facilité aux composants.</li>
-              </ul>
-              <p><strong>Résultat :</strong> sécurité, conformité et interventions plus rapides en exploitation.</p>
-            </div>
-          </article>
+          </aside>
         </div>
       </div>
     </section>
   </main>
+
+  <div class="audit-modal" id="audit-form-modal" hidden role="dialog" aria-modal="true" aria-labelledby="audit-modal-title">
+    <div class="audit-modal-backdrop" data-audit-close></div>
+    <div class="audit-modal-panel" role="document">
+      <button class="audit-modal-close" type="button" aria-label="Fermer le formulaire" data-audit-close>×</button>
+      <div class="modal-head">
+        <p class="eyebrow">Audit gratuit · Tunnel Brevo</p>
+        <h2 id="audit-modal-title">Demander un audit gratuit</h2>
+        <p>Remplissez ce formulaire. Une fois l'URL publique Brevo renseignée dans le HTML, Brevo récupère la demande et déclenche votre tunnel de vente.</p>
+      </div>
+      <form class="card form-card audit-form" id="brevoAuditForm" action="https://sibforms.com/serve/YOUR_BREVO_FORM_ID" method="POST" data-brevo-endpoint="">
+        <input type="hidden" name="LEAD_SOURCE" value="Site web DM APPROTECH">
+        <input type="hidden" name="FUNNEL_STAGE" value="Audit gratuit">
+        <input type="hidden" name="SERVICE_INTEREST" value="Audit énergétique">
+        <input type="hidden" name="SOURCE_URL" value="">
+        <input type="hidden" name="SUBMITTED_AT" value="">
+        <input type="hidden" name="UTM_SOURCE" value="">
+        <input type="hidden" name="UTM_MEDIUM" value="">
+        <input type="hidden" name="UTM_CAMPAIGN" value="">
+        <input type="hidden" name="UTM_CONTENT" value="">
+        <input type="text" name="email_address_check" value="" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <div class="form-grid">
+          <div class="form-group"><label for="FIRSTNAME">Prénom *</label><input id="FIRSTNAME" name="FIRSTNAME" type="text" autocomplete="given-name" required></div>
+          <div class="form-group"><label for="LASTNAME">Nom *</label><input id="LASTNAME" name="LASTNAME" type="text" autocomplete="family-name" required></div>
+        </div>
+        <div class="form-grid">
+          <div class="form-group"><label for="EMAIL">Email *</label><input id="EMAIL" name="EMAIL" type="email" autocomplete="email" required></div>
+          <div class="form-group"><label for="SMS">Téléphone / WhatsApp *</label><input id="SMS" name="SMS" type="tel" autocomplete="tel" required></div>
+        </div>
+        <div class="form-grid">
+          <div class="form-group"><label for="COMPANY">Entreprise</label><input id="COMPANY" name="COMPANY" type="text" autocomplete="organization"></div>
+          <div class="form-group"><label for="SITE_CITY">Ville / site *</label><input id="SITE_CITY" name="SITE_CITY" type="text" placeholder="Douala, Yaoundé, Bafoussam..." required></div>
+        </div>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="INFRA_TYPE">Infrastructure *</label>
+            <select id="INFRA_TYPE" name="INFRA_TYPE" required>
+              <option value="">Sélectionnez</option>
+              <option>Groupe électrogène existant</option>
+              <option>Projet nouveau groupe FG Wilson</option>
+              <option>Solaire hybride</option>
+              <option>Parc multi-sites</option>
+              <option>Autre infrastructure critique</option>
+            </select>
+          </div>
+          <div class="form-group"><label for="POWER_NEED">Puissance estimée</label><input id="POWER_NEED" name="POWER_NEED" type="text" placeholder="Exemple: 100 kVA"></div>
+        </div>
+        <div class="form-group">
+          <label for="AUDIT_GOAL">Objectif principal *</label>
+          <select id="AUDIT_GOAL" name="AUDIT_GOAL" required>
+            <option value="">Sélectionnez</option>
+            <option>Réduire les pannes</option>
+            <option>Réduire la consommation carburant</option>
+            <option>Installer ou hybrider avec solaire</option>
+            <option>Mettre en place un contrat de maintenance</option>
+            <option>Préparer un devis technique complet</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="MESSAGE">Contexte du site</label>
+          <textarea id="MESSAGE" name="MESSAGE" placeholder="Décrivez vos coupures, équipements critiques, consommation carburant, horaires, urgence et contraintes d'accès."></textarea>
+        </div>
+        <label class="consent-line">
+          <input type="checkbox" name="OPT_IN" value="1" required>
+          <span>J'accepte d'être contacté par DM APPROTECH pour le diagnostic, le devis et le suivi de mon audit gratuit.</span>
+        </label>
+        <button class="btn" type="submit">Envoyer ma demande d'audit</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+        <p class="privacy-note">Configuration Brevo: remplacez <strong>YOUR_BREVO_FORM_ID</strong> par l'URL publique du formulaire Brevo. Voir <strong>BREVO-INTEGRATION.md</strong>. Aucune clé API ne doit être exposée dans cette page.</p>
+      </form>
+    </div>
+  </div>
 
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <div>
           <h4>DM APPROTECH SARL</h4>
-          <p>371, rue Sylvani AKWA<br>BP 15180 Douala, Cameroun<br>Commercial: +237 676 291 773 / 690 279 966</p>
+          <p>371, rue Sylvani AKWA<br>BP 15180 Douala, Cameroun</p>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <p><a href="#service-solaire">Energie solaire</a><br><a class="js-audit-open" href="#audit-form-modal">Audit gratuit</a><br><a href="#contact-devis">Contact/Devis</a></p>
         </div>
         <div>
           <h4>Contacts</h4>
-          <p><a href="mailto:rescom_dmapprotechsarl@yahoo.fr">rescom_dmapprotechsarl@yahoo.fr</a><br><a href="mailto:dg_dmapprotechsarl@yahoo.fr">dg_dmapprotechsarl@yahoo.fr</a></p>
-        </div>
-        <div>
-          <h4>Navigation</h4>
-          <p><a href="etude-conception.html">Étude</a><br><a href="modification.html">Modification</a><br><a href="installation.html">Installation</a><br><a href="energie-solaire.html">Énergie solaire</a><br><a href="contact.html">Maintenance & SAV</a><br><a href="a-propos.html">À propos</a><br><a href="mentions-legales.html">Mentions légales</a></p>
+          <p><a href="tel:+237676291773">+237 676 291 773</a> / <a href="tel:+237690279966">+237 690 279 966</a><br><a href="mailto:rescom_dmapprotechsarl@yahoo.fr">rescom_dmapprotechsarl@yahoo.fr</a><br><a href="mailto:dg_dmapprotechsarl@yahoo.fr">dg_dmapprotechsarl@yahoo.fr</a><br><a href="https://wa.me/237676291773" target="_blank" rel="noopener">WhatsApp direct</a></p>
         </div>
       </div>
       <div class="copyright">© 2026 DM APPROTECH. Tous droits réservés.</div>
     </div>
   </footer>
-  <script src="js/energy-ball.js"></script>
+
   <script src="js/script.js"></script>
 </body>
 </html>
