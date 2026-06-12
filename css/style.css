@@ -2787,3 +2787,380 @@ body {
     margin-right: 8px;
   }
 }
+
+@media (max-width: 760px) {
+  html,
+  body {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  main,
+  section {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .container,
+  .header .container {
+    width: calc(100vw - 28px) !important;
+    max-width: calc(100vw - 28px) !important;
+  }
+
+  .header {
+    backdrop-filter: blur(12px);
+  }
+
+  .header .container {
+    min-height: 68px;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+    padding-right: 56px;
+  }
+
+  .logo-img {
+    width: 82px;
+    height: 46px;
+  }
+
+  .menu-toggle {
+    display: grid !important;
+    place-items: center;
+    position: absolute !important;
+    top: 12px !important;
+    right: 0 !important;
+    left: auto !important;
+    flex: 0 0 44px;
+    margin-left: auto;
+    width: 44px;
+    height: 44px;
+    background: linear-gradient(135deg, var(--accent), #25ad55);
+    color: #082317;
+    z-index: 100;
+  }
+
+  .nav-menu.active {
+    margin-top: 8px;
+    padding: 10px 0 14px;
+  }
+
+  .hero-home {
+    min-height: auto;
+    background: #061f35;
+  }
+
+  .hero-home .hero-inner {
+    gap: 24px;
+    padding: 44px 0 36px;
+  }
+
+  .hero-bg-image {
+    top: auto;
+    right: -22%;
+    bottom: 0;
+    width: 132%;
+    height: 58%;
+    object-fit: contain;
+    object-position: right bottom;
+    opacity: 0.72 !important;
+    filter: saturate(1.14) contrast(1.08);
+  }
+
+  .hero-shade {
+    background:
+      linear-gradient(180deg, rgba(5, 22, 38, 0.98) 0%, rgba(7, 31, 52, 0.9) 46%, rgba(7, 31, 52, 0.62) 73%, rgba(7, 31, 52, 0.76) 100%),
+      linear-gradient(90deg, rgba(5, 22, 38, 0.95), rgba(5, 22, 38, 0.46));
+  }
+
+  .hero-copy,
+  .lead,
+  .hero-points,
+  .hero-points li {
+    max-width: 100%;
+  }
+
+  .eyebrow,
+  .lead,
+  .hero-points li,
+  .dashboard-metrics span,
+  .dashboard-metrics strong,
+  .generator-status strong,
+  .generator-status span {
+    overflow-wrap: anywhere;
+  }
+
+  .eyebrow {
+    max-width: 28ch;
+  }
+
+  .hero-copy::after {
+    content: "";
+    display: block;
+    height: 188px;
+    margin: 22px 0 0;
+    border: 1px solid rgba(217, 248, 223, 0.2);
+    border-radius: var(--radius);
+    background:
+      linear-gradient(145deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.02)),
+      url("../images/Hero.png") center / contain no-repeat;
+    box-shadow:
+      inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+      0 18px 38px rgba(0, 0, 0, 0.18);
+    backdrop-filter: blur(2px);
+  }
+
+  .hero-copy h1 {
+    max-width: 11ch;
+    font-size: clamp(2rem, 8.2vw, 2.28rem);
+    line-height: 1.12;
+    overflow-wrap: normal;
+  }
+
+  .lead {
+    max-width: 34ch;
+    font-size: 1.02rem;
+  }
+
+  .hero-points {
+    max-width: 34ch;
+    gap: 11px;
+  }
+
+  .hero-points li {
+    font-size: 0.96rem;
+  }
+
+  .monitoring-dashboard {
+    margin-top: 0;
+    padding: 16px;
+    background:
+      linear-gradient(160deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.08)),
+      rgba(6, 30, 54, 0.46);
+  }
+
+  .dashboard-head {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: flex-start;
+  }
+
+  .dashboard-head span {
+    line-height: 1.35;
+    overflow-wrap: break-word;
+  }
+
+  .dashboard-metrics {
+    grid-template-columns: 1fr !important;
+    gap: 8px;
+  }
+
+  .dashboard-metrics div {
+    min-width: 0;
+    padding: 12px;
+  }
+
+  .dashboard-metrics strong {
+    font-size: 1.42rem;
+  }
+
+  .dashboard-metrics span {
+    font-size: 0.78rem;
+  }
+
+  .generator-status {
+    align-items: flex-start;
+    padding: 12px;
+  }
+
+  .signal-lines {
+    gap: 6px;
+  }
+
+  .section {
+    padding: 58px 0;
+  }
+
+  .section-head {
+    margin-bottom: 24px;
+  }
+
+  .home-proof-layout {
+    gap: 12px;
+  }
+
+  .stat-strip {
+    grid-template-columns: 1fr !important;
+  }
+
+  .stat-item {
+    min-width: 0;
+    min-height: auto;
+    padding: 16px;
+  }
+
+  .stat-item strong {
+    font-size: 1.35rem;
+    overflow-wrap: anywhere;
+  }
+
+  .stat-item span {
+    font-size: 0.86rem;
+    overflow-wrap: anywhere;
+  }
+
+  .fg-copy,
+  .fg-summary-card,
+  .offer-card,
+  .result-card,
+  .testimonial-card,
+  .carousel-slide div {
+    min-width: 0;
+  }
+
+  .fg-copy h2,
+  .section-head h2,
+  .offer-card h3,
+  .result-card span,
+  .testimonial-card p {
+    overflow-wrap: break-word;
+  }
+
+  .fg-copy h2 {
+    max-width: 18ch;
+  }
+
+  .fg-summary-card,
+  .offer-card,
+  .testimonial-card,
+  .form-card {
+    padding: 18px;
+  }
+
+  .fg-layout {
+    gap: 22px;
+  }
+
+  .fg-copy p {
+    font-size: 0.98rem;
+  }
+
+  .fg-badges {
+    gap: 8px;
+  }
+
+  .fg-badges span {
+    padding: 9px 10px;
+    font-size: 0.82rem;
+  }
+
+  .fg-visual > img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .core-services,
+  .offer-grid {
+    gap: 14px;
+  }
+
+  .solar-service-panel {
+    min-height: 540px;
+  }
+
+  .solar-service-panel > img {
+    top: auto;
+    bottom: 0;
+    height: 48%;
+    opacity: 0.82;
+    object-fit: cover;
+    object-position: center bottom;
+  }
+
+  .solar-service-panel::before {
+    background:
+      linear-gradient(180deg, rgba(7, 31, 52, 0.98) 0%, rgba(13, 58, 110, 0.86) 46%, rgba(7, 31, 52, 0.4) 74%, rgba(7, 31, 52, 0.66) 100%);
+  }
+
+  .solar-service-copy {
+    max-width: none;
+    padding: 22px;
+  }
+
+  .solar-service-list {
+    gap: 8px;
+  }
+
+  .project-carousel {
+    padding: 12px;
+  }
+
+  .carousel-stage {
+    height: 560px;
+  }
+
+  .carousel-slide {
+    inset: 0 2%;
+    grid-template-rows: 220px 1fr;
+  }
+
+  .carousel-slide div {
+    padding: 20px;
+  }
+
+  .carousel-slide h3 {
+    font-size: 1.45rem;
+  }
+
+  .carousel-slide p {
+    font-size: 0.94rem;
+  }
+
+  .carousel-slide.is-prev {
+    opacity: 0.34;
+    transform: translate3d(-28%, 0, -180px) rotateY(36deg) scale(0.72);
+  }
+
+  .carousel-slide.is-next {
+    opacity: 0.34;
+    transform: translate3d(28%, 0, -180px) rotateY(-36deg) scale(0.72);
+  }
+
+  .carousel-slide.is-far-prev,
+  .carousel-slide.is-far-next {
+    opacity: 0;
+  }
+
+  .video-reel {
+    gap: 12px;
+  }
+
+  .video-reel video {
+    height: 185px;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    width: calc(100% - 28px);
+  }
+
+  .dashboard-metrics {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .stat-strip {
+    grid-template-columns: 1fr !important;
+  }
+
+  .stat-item {
+    min-height: auto;
+  }
+
+  .carousel-stage {
+    height: 535px;
+  }
+
+  .carousel-slide {
+    grid-template-rows: 205px 1fr;
+  }
+}

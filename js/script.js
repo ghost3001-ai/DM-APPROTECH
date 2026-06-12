@@ -186,49 +186,32 @@ document.addEventListener('DOMContentLoaded', () => {
     queueNextRotation();
   });
 
-  const brevoAuditForm = document.getElementById('brevoAuditForm');
-  if (brevoAuditForm) {
-    const status = brevoAuditForm.querySelector('.form-status');
-    const urlParams = new URLSearchParams(window.location.search);
+  /*
+  Commented out to avoid conflicts with Brevo's official script.
+  The Brevo form now handles its own submission and tracking via https://sibforms.com/forms/end-form/build/main.js
+  */
 
-    const setHiddenValue = (name, value) => {
-      const field = brevoAuditForm.querySelector(`input[name="${name}"]`);
-      if (field) field.value = value || '';
-    };
+  // Logic to handle redirection to merci.html after success
+  const observeSuccessMessage = () => {
+    const successMessage = document.getElementById('success-message');
+    if (!successMessage) return;
 
-    const syncBrevoTrackingFields = () => {
-      setHiddenValue('SOURCE_URL', window.location.href);
-      setHiddenValue('SUBMITTED_AT', new Date().toISOString());
-      setHiddenValue('UTM_SOURCE', urlParams.get('utm_source'));
-      setHiddenValue('UTM_MEDIUM', urlParams.get('utm_medium'));
-      setHiddenValue('UTM_CAMPAIGN', urlParams.get('utm_campaign'));
-      setHiddenValue('UTM_CONTENT', urlParams.get('utm_content'));
-    };
-
-    syncBrevoTrackingFields();
-
-    brevoAuditForm.addEventListener('submit', (event) => {
-      syncBrevoTrackingFields();
-
-      const trap = brevoAuditForm.querySelector('input[name="email_address_check"]');
-      if (trap && trap.value.trim()) {
-        event.preventDefault();
-        return;
-      }
-
-      const configuredEndpoint = brevoAuditForm.dataset.brevoEndpoint.trim() || brevoAuditForm.action;
-      const isConfigured = configuredEndpoint && !configuredEndpoint.includes('YOUR_BREVO_FORM_ID');
-
-      if (!isConfigured) {
-        event.preventDefault();
-        if (status) {
-          status.textContent = 'Formulaire prêt: ajoutez l’URL publique Brevo dans action ou data-brevo-endpoint pour activer l’envoi CRM.';
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (mutation.attributeName === 'style') {
+          const display = window.getComputedStyle(successMessage).display;
+          if (display !== 'none') {
+            // Success message is visible, redirect after 2 seconds
+            setTimeout(() => {
+              window.location.href = 'merci.html';
+            }, 2000);
+          }
         }
-        return;
-      }
-
-      brevoAuditForm.action = configuredEndpoint;
-      if (status) status.textContent = 'Envoi vers le CRM Brevo...';
+      });
     });
-  }
+
+    observer.observe(successMessage, { attributes: true });
+  };
+
+  observeSuccessMessage();
 });
