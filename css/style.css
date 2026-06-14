@@ -2386,20 +2386,6 @@ section[id] {
   padding: 7px 0 !important;
 }
 
-.brevo-form-logo-block {
-  display: flex !important;
-  justify-content: center !important;
-  padding: 0 !important;
-  background: transparent !important;
-}
-
-.brevo-form-logo {
-  width: 128px;
-  height: auto;
-  object-fit: contain;
-  filter: drop-shadow(0 8px 14px rgba(10, 37, 62, 0.12));
-}
-
 .brevo-form-title {
   background: transparent !important;
   color: var(--brand) !important;
@@ -3006,10 +2992,6 @@ body {
 
   .audit-modal #sib-container {
     padding: 20px 16px 22px !important;
-  }
-
-  .brevo-form-logo {
-    width: 108px;
   }
 
   .modal-head {
