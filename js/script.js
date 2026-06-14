@@ -80,7 +80,8 @@ document.addEventListener('DOMContentLoaded', () => {
     auditModal.hidden = false;
     document.body.classList.add('modal-open');
 
-    const firstField = auditModal.querySelector('input:not([type="hidden"]):not(.honeypot), select, textarea, button');
+    const firstField = auditModal.querySelector('#sib-form input:not([type="hidden"]):not(.input--hidden), #sib-form select, #sib-form textarea')
+      || auditModal.querySelector('button');
     if (firstField) firstField.focus();
   };
 
@@ -191,26 +192,37 @@ document.addEventListener('DOMContentLoaded', () => {
   The Brevo form now handles its own submission and tracking via https://sibforms.com/forms/end-form/build/main.js
   */
 
-  // Logic to handle redirection to merci.html after success
+  // Redirect to the confirmation page after Brevo displays its success panel.
   const observeSuccessMessage = () => {
     const successMessage = document.getElementById('success-message');
     if (!successMessage) return;
+    let hasRedirected = false;
 
-    const observer = new MutationObserver((mutations) => {
-      mutations.forEach((mutation) => {
-        if (mutation.attributeName === 'style') {
-          const display = window.getComputedStyle(successMessage).display;
-          if (display !== 'none') {
-            // Success message is visible, redirect after 2 seconds
-            setTimeout(() => {
-              window.location.href = 'merci.html';
-            }, 2000);
-          }
-        }
-      });
+    const redirectWhenVisible = () => {
+      if (hasRedirected) return;
+
+      const styles = window.getComputedStyle(successMessage);
+      const isVisible = styles.display !== 'none'
+        && styles.visibility !== 'hidden'
+        && Number(styles.opacity || 1) !== 0;
+
+      if (!isVisible) return;
+
+      hasRedirected = true;
+      window.setTimeout(() => {
+        window.location.href = 'merci.html';
+      }, 1600);
+    };
+
+    const observer = new MutationObserver(redirectWhenVisible);
+
+    observer.observe(successMessage, {
+      attributes: true,
+      attributeFilter: ['class', 'style', 'hidden', 'aria-hidden'],
+      childList: true,
+      subtree: true
     });
-
-    observer.observe(successMessage, { attributes: true });
+    redirectWhenVisible();
   };
 
   observeSuccessMessage();

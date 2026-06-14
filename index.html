@@ -10,7 +10,9 @@
   <meta property="og:description" content="Vente, étude, installation, maintenance, monitoring IoT et solaire hybride pour éliminer les pertes liées aux coupures électriques.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="images/Hero.png">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" href="images/Logo Dm_approtech.png">
+  <link rel="apple-touch-icon" href="images/Logo Dm_approtech.png">
+  <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
   <link rel="stylesheet" href="css/style.css">
   <style>
     @font-face {
@@ -65,7 +67,6 @@
       color: #2BB2FC;
     }
   </style>
-  <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
 </head>
 <body>
   <header class="header">
@@ -88,7 +89,7 @@
   </header>
 
   <main>
-    <section class="hero hero-home" id="accueil">
+    <section class="hero hero-home reveal" id="accueil">
       <img src="images/Hero.png" alt="Groupe électrogène supervisé par un technicien DM APPROTECH" class="hero-bg-image">
       <div class="hero-shade"></div>
       <div class="container hero-inner">
@@ -130,7 +131,7 @@
       </div>
     </section>
 
-    <section class="section section-soft" aria-label="Indicateurs rapides">
+    <section class="section section-soft reveal" aria-label="Indicateurs rapides">
       <div class="container">
         <div class="home-proof-layout">
           <div class="stat-strip">
@@ -152,7 +153,7 @@
       </div>
     </section>
 
-    <section class="section fg-section" id="fg-wilson">
+    <section class="section fg-section reveal" id="fg-wilson">
       <div class="container">
         <div class="fg-layout">
           <div class="fg-copy">
@@ -181,7 +182,7 @@
       </div>
     </section>
 
-    <section class="section" id="services">
+    <section class="section reveal" id="services">
       <div class="container">
         <div class="section-head center">
           <p class="eyebrow">Services</p>
@@ -290,13 +291,14 @@
             </div>
             <a class="btn js-audit-open" href="#audit-form-modal">Demander l'audit solaire</a>
           </div>
+        </div>
+      </div>
+    </section>
 
-    <section class="section section-soft" id="chantier-media">
+    <section class="section section-soft reveal" id="chantier-media">
       <div class="container">
         <div class="section-head center">
-          <p class="eyebrow">Preuves terrain</p>
-          <h2>FG Wilson en atelier, en livraison et en exploitation.</h2>
-          <p>La galerie a été condensée en carrousel animé pour montrer les visuels nécessaires sans allonger inutilement la page: gamme, stock, chantier, logistique, maintenance, contrôle électrique et solaire hybride.</p>
+          <h2>DM APPROTECH: FG Wilson en atelier, en livraison et en exploitation.</h2>
         </div>
 
         <div class="project-carousel" data-carousel aria-label="Galerie professionnelle DM APPROTECH">
@@ -399,7 +401,7 @@
       </div>
     </section>
 
-    <section class="section section-soft" id="valeur">
+    <section class="section section-soft reveal" id="valeur">
       <div class="container">
         <div class="value-layout">
           <div class="section-head">
@@ -437,10 +439,9 @@
       </div>
     </section>
 
-    <section class="section" id="resultat">
+    <section class="section reveal" id="resultat">
       <div class="container">
         <div class="section-head center">
-          <p class="eyebrow">Résultats prouvés</p>
           <h2>Des chiffres qui parlent d'eux-mêmes.</h2>
           <p>Nos clients constatent des résultats mesurables dès les premières semaines d'engagement.</p>
         </div>
@@ -470,10 +471,9 @@
       </div>
     </section>
 
-    <section class="section section-soft" id="clients">
+    <section class="section section-soft reveal" id="clients">
       <div class="container">
         <div class="section-head center">
-          <p class="eyebrow">Clients & Témoignages</p>
           <h2>Ils nous font confiance.</h2>
           <p>Industries, cliniques, hôtels, télécommunications, administrations et sites critiques recherchent la même chose: une énergie disponible, mesurable et maintenable.</p>
         </div>
@@ -510,7 +510,7 @@
       </div>
     </section>
 
-    <section class="section" id="contact-devis">
+    <section class="section reveal" id="contact-devis">
       <div class="container">
         <div class="contact-layout">
           <div class="section-head">
@@ -547,10 +547,10 @@
     <div class="audit-modal-panel" role="document">
       <button class="audit-modal-close" type="button" aria-label="Fermer le formulaire" data-audit-close>×</button>
       <div class="modal-head">
-        <p class="eyebrow">DM APPROTECH</p>
+        <img src="images/Logo Dm_approtech.png" alt="DM APPROTECH" class="modal-brand-logo">
         <h2 id="audit-modal-title">Demander un audit gratuit</h2>
         <p>Remplissez ce formulaire.</p>
-       </div>
+      </div>
       <div class="sib-form" style="text-align: center; background-color: transparent;">
         <div id="sib-form-container" class="sib-form-container">
           <div id="error-message" class="sib-form-message-panel" style="font-family:Helvetica, sans-serif; font-size:16px; text-align:left; color:#661d1d; background-color:#ffeded; border-color:#ff4949; border-radius:3px; max-width:350px;">
@@ -570,7 +570,7 @@
                 <path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z" />
               </svg>
               <span class="sib-form-message-panel__inner-text">
-                Votre demande d&#39;audit a été enregistré avec succès. Nous vous recontacterons pour votre Audit
+                Votre demande d&#39;audit a été enregistrée avec succès. Nous vous recontacterons pour votre audit.
               </span>
             </div>
           </div>
@@ -578,22 +578,22 @@
           <div id="sib-container" class="sib-container--medium sib-container--vertical" style="max-width:350px; text-align:center; background-color:rgba(255,255,255,0.8); border-width:1px; border-style:solid; border-color:#C0CCD9; border-radius:3px; direction:ltr">
             <form id="sib-form" method="POST" action="https://8689e2ca.sibforms.com/serve/MUIFADTzeW-4B6jk-D72yMsTdvun6U3EIkziNzivLiElVnLCagfuYiYxcpBj7FtcOZoyGOmou4ptui8_W9ImyX_QPFBlq0B6fZyQVSb5qPVkrteAVvbjzo42n4LQuud8r_14NAG5Op_CIJ-7oWGVBz1XNZCFaPEAjiTk43PQOQAuUN9rx9LPNSgQ_yOIlBoSM6EYchxAwDtelQ6ByA==" data-type="subscription">
               <div style="padding: 8px 0;">
-                <div class="sib-form-block" style="font-family:Palatino Linotype, serif; font-size:15px; font-weight:700; text-align:left; text-decoration:underline; color:#95d4b2; background-color:transparent; text-align:left">
-                  <p>DM APPROTECH</p>
+                <div class="sib-form-block brevo-form-logo-block">
+                  <img src="images/Logo Dm_approtech.png" alt="DM APPROTECH" class="brevo-form-logo">
                 </div>
               </div>
               <div style="padding: 8px 0;">
-                <div class="sib-form-block" style="font-family:Helvetica, sans-serif; font-size:32px; font-weight:700; text-align:left; color:#3C4858; background-color:transparent; text-align:left">
-                  <p>Recevoir mon Audit gratuit</p>
+                <div class="sib-form-block brevo-form-title">
+                  <p>Recevoir mon audit gratuit</p>
                 </div>
               </div>
               <div style="padding: 8px 0;">
                 <div class="sib-input sib-form-block">
                   <div class="form__entry entry_block">
                     <div class="form__label-row ">
-                      <label class="entry__label" style="font-weight: 700; text-align: left; font-family:Helvetica, sans-serif; font-size:16px; font-weight:700; text-align:left; color:#3c4858;" for="PRENOM" data-required="*">PRENOM</label>
+                      <label class="entry__label" style="font-weight: 700; text-align: left; font-family:Helvetica, sans-serif; font-size:16px; font-weight:700; text-align:left; color:#3c4858;" for="PRENOM" data-required="*">Prénom</label>
                       <div class="entry__field">
-                        <input class="input " maxlength="200" type="text" id="PRENOM" name="PRENOM" autocomplete="off" placeholder="PRENOM" data-required="true" required />
+                        <input class="input " maxlength="200" type="text" id="PRENOM" name="PRENOM" autocomplete="given-name" placeholder="Votre prénom" data-required="true" required />
                       </div>
                     </div>
                     <label class="entry__error entry__error--primary" style="font-family:Helvetica, sans-serif; font-size:16px; text-align:left; color:#661d1d; background-color:#ffeded; border-color:#ff4949; border-radius:3px;">
@@ -605,9 +605,9 @@
                 <div class="sib-input sib-form-block">
                   <div class="form__entry entry_block">
                     <div class="form__label-row ">
-                      <label class="entry__label" style="font-weight: 700; text-align: left; font-family:Helvetica, sans-serif; font-size:16px; font-weight:700; text-align:left; color:#3c4858;" for="NOM" data-required="*">NOM</label>
+                      <label class="entry__label" style="font-weight: 700; text-align: left; font-family:Helvetica, sans-serif; font-size:16px; font-weight:700; text-align:left; color:#3c4858;" for="NOM" data-required="*">Nom</label>
                       <div class="entry__field">
-                        <input class="input " maxlength="200" type="text" id="NOM" name="NOM" autocomplete="off" placeholder="NOM" data-required="true" required />
+                        <input class="input " maxlength="200" type="text" id="NOM" name="NOM" autocomplete="family-name" placeholder="Votre nom" data-required="true" required />
                       </div>
                     </div>
                     <label class="entry__error entry__error--primary" style="font-family:Helvetica, sans-serif; font-size:16px; text-align:left; color:#661d1d; background-color:#ffeded; border-color:#ff4949; border-radius:3px;">
@@ -621,7 +621,7 @@
                     <div class="form__label-row ">
                       <label class="entry__label" style="font-weight: 700; text-align: left; font-family:Helvetica, sans-serif; font-size:16px; font-weight:700; text-align:left; color:#3c4858;" for="EMAIL" data-required="*">Email</label>
                       <div class="entry__field">
-                        <input class="input " type="text" id="EMAIL" name="EMAIL" autocomplete="off" value="" placeholder="EMAIL" data-required="true" required />
+                        <input class="input " type="email" id="EMAIL" name="EMAIL" autocomplete="email" value="" placeholder="votre@email.com" data-required="true" required />
                       </div>
                     </div>
                     <label class="entry__error entry__error--primary" style="font-family:Helvetica, sans-serif; font-size:16px; text-align:left; color:#661d1d; background-color:#ffeded; border-color:#ff4949; border-radius:3px;">
@@ -635,8 +635,25 @@
                     <div class="form__label-row ">
                       <label class="entry__label" style="font-weight: 700; text-align: left; font-family:Helvetica, sans-serif; font-size:16px; font-weight:700; text-align:left; color:#3c4858;" for="TELEPHONE_CLIENT" data-required="*">Téléphone / WhatsApp</label>
                       <div class="entry__field">
-                        <input maxlength="200" type="text" data-numeric="true" class="input " id="TELEPHONE_CLIENT" name="TELEPHONE_CLIENT" autocomplete="off" data-required="true" required />
+                        <input maxlength="200" type="tel" inputmode="tel" data-numeric="true" class="input " id="TELEPHONE_CLIENT" name="TELEPHONE_CLIENT" autocomplete="tel" placeholder="+237 6XX XXX XXX" data-required="true" required />
                       </div>
+                    </div>
+                    <label class="entry__error entry__error--primary" style="font-family:Helvetica, sans-serif; font-size:16px; text-align:left; color:#661d1d; background-color:#ffeded; border-color:#ff4949; border-radius:3px;">
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div style="padding: 8px 0;">
+                <div class="sib-captcha sib-form-block">
+                  <div class="form__entry entry_block">
+                    <div class="form__label-row ">
+                      <script>
+                        function handleCaptchaResponse() {
+                          var event = new Event('captchaChange');
+                          document.getElementById('sib-captcha').dispatchEvent(event);
+                        }
+                      </script>
+                      <div class="g-recaptcha sib-visible-recaptcha" id="sib-captcha" data-sitekey="6LfTnR4tAAAAANB_eOK8rGfJCRPeG4leV4yb1LGA" data-callback="handleCaptchaResponse" style="direction:ltr"></div>
                     </div>
                     <label class="entry__error entry__error--primary" style="font-family:Helvetica, sans-serif; font-size:16px; text-align:left; color:#661d1d; background-color:#ffeded; border-color:#ff4949; border-radius:3px;">
                     </label>
@@ -661,6 +678,34 @@
       </div>
     </div>
   </div>
+
+  <section class="location-map-section" aria-labelledby="location-map-title">
+    <div class="container">
+      <div class="location-map-layout">
+        <div class="section-head">
+          <p class="eyebrow">Localisation</p>
+          <h2 id="location-map-title">DM APPROTECH à Douala, au cœur d'Akwa.</h2>
+          <p>Retrouvez-nous au 371, rue Sylvani AKWA, BP 15180 Douala. Notre équipe vous accompagne pour les audits, devis, installations FG Wilson, maintenance et solutions solaires hybrides.</p>
+          <div class="map-actions">
+            <a class="btn" href="https://www.google.com/maps/search/?api=1&query=371%20rue%20Sylvani%20AKWA%2C%20Douala%2C%20Cameroun" target="_blank" rel="noopener">Ouvrir l'itinéraire</a>
+            <a class="btn btn-secondary" href="tel:+237676291773">Appeler maintenant</a>
+          </div>
+        </div>
+        <div class="map-3d-card">
+          <iframe
+            title="Carte 3D DM APPROTECH Douala Akwa"
+            src="https://www.google.com/maps?q=371%20rue%20Sylvani%20AKWA%2C%20Douala%2C%20Cameroun&output=embed"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="map-pin-card">
+            <strong>DM APPROTECH SARL</strong>
+            <span>371, rue Sylvani AKWA · Douala</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <footer class="footer">
     <div class="container">
@@ -702,6 +747,20 @@
     var AUTOHIDE = Boolean(0);
   </script>
   <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js?hl=fr"></script>
   <script src="js/script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const reveals = document.querySelectorAll('.reveal');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.1 });
+      reveals.forEach(el => observer.observe(el));
+    });
+  </script>
 </body>
 </html>

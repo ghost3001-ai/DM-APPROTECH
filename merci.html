@@ -3,81 +3,121 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Merci | DM APPROTECH</title>
-  <meta name="description" content="Votre demande d'audit a été bien reçue par DM APPROTECH.">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <title>Demande reçue | DM APPROTECH</title>
+  <meta name="description" content="Votre demande d'audit gratuit a été bien reçue par DM APPROTECH.">
+  <link rel="icon" type="image/png" href="images/Logo Dm_approtech.png">
+  <link rel="apple-touch-icon" href="images/Logo Dm_approtech.png">
   <link rel="stylesheet" href="css/style.css">
   <style>
-    .merci-hero {
-      min-height: 80vh;
+    .merci-page {
+      min-height: 100vh;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      background:
+        linear-gradient(120deg, rgba(7, 31, 52, 0.88), rgba(13, 58, 110, 0.66)),
+        url("images/Hero.png") center / cover no-repeat;
+    }
+
+    .merci-header {
+      padding: 18px 0;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(10px);
+    }
+
+    .merci-header .container {
       display: flex;
-      align-items: center;
       justify-content: center;
-      text-align: center;
-      padding: 40px 20px;
     }
-    .merci-card {
-      background: white;
-      padding: 60px 40px;
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      max-width: 600px;
-      width: 100%;
+
+    .merci-logo {
+      width: 126px;
+      height: auto;
+      object-fit: contain;
     }
-    .check-icon {
-      width: 80px;
-      height: 80px;
-      background: var(--accent);
-      color: white;
-      border-radius: 50%;
+
+    .merci-hero {
       display: grid;
       place-items: center;
-      margin: 0 auto 30px;
-      font-size: 40px;
-      font-weight: bold;
+      padding: 54px 20px;
     }
+
+    .merci-card {
+      width: min(100%, 680px);
+      padding: clamp(28px, 6vw, 58px);
+      border: 1px solid rgba(217, 248, 223, 0.28);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.94);
+      box-shadow: 0 28px 80px rgba(8, 28, 52, 0.28);
+      text-align: center;
+    }
+
+    .check-icon {
+      width: 76px;
+      height: 76px;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 24px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--accent), #1da64c);
+      color: #082317;
+      font-size: 2.2rem;
+      font-weight: 950;
+      box-shadow: 0 16px 34px rgba(47, 190, 99, 0.3);
+    }
+
     .merci-card h1 {
+      margin-bottom: 16px;
       color: var(--brand);
-      margin-bottom: 20px;
-      font-size: 2.5rem;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      line-height: 1.05;
     }
+
     .merci-card p {
+      max-width: 54ch;
+      margin: 0 auto 28px;
       color: var(--muted);
-      font-size: 1.2rem;
-      margin-bottom: 40px;
-      line-height: 1.6;
+      font-size: 1.08rem;
+      line-height: 1.65;
     }
-    .btn-home {
-      display: inline-block;
-      text-decoration: none;
+
+    .merci-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .merci-footer {
+      padding: 20px;
+      color: rgba(255, 255, 255, 0.76);
+      text-align: center;
+      font-weight: 700;
     }
   </style>
 </head>
-<body>
-  <header class="header">
+<body class="merci-page">
+  <header class="merci-header">
     <div class="container">
-      <a class="logo logo-with-image" href="index.html" aria-label="DM APPROTECH">
-        <img src="images/Logo Dm_approtech.png" alt="DM APPROTECH" class="logo-img">
-        <span class="logo-text">DM APPROTECH <span>Solutions énergétiques</span></span>
+      <a href="index.html" aria-label="Retour à l'accueil DM APPROTECH">
+        <img src="images/Logo Dm_approtech.png" alt="DM APPROTECH" class="merci-logo">
       </a>
     </div>
   </header>
 
   <main class="merci-hero">
-    <div class="merci-card">
-      <div class="check-icon">✓</div>
-      <h1>Demande reçue !</h1>
-      <p>Votre demande d'audit a été enregistrée avec succès. <br>Nos experts vous recontacteront sous 24h maximum pour convenir d'un rendez-vous.</p>
-      <a href="index.html" class="btn btn-home">Retour à l'accueil</a>
-    </div>
+    <section class="merci-card" aria-labelledby="merci-title">
+      <div class="check-icon" aria-hidden="true">✓</div>
+      <h1 id="merci-title">Demande reçue.</h1>
+      <p>Votre demande d'audit gratuit a été enregistrée avec succès. Un conseiller DM APPROTECH vous recontactera rapidement pour qualifier votre besoin et préparer votre diagnostic énergétique.</p>
+      <div class="merci-actions">
+        <a href="index.html" class="btn">Retour à l'accueil</a>
+        <a href="https://wa.me/237676291773" class="btn btn-secondary" target="_blank" rel="noopener">WhatsApp direct</a>
+      </div>
+    </section>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="copyright">© 2026 DM APPROTECH. Tous droits réservés.</div>
-    </div>
+  <footer class="merci-footer">
+    © 2026 DM APPROTECH. Tous droits réservés.
   </footer>
-
-  <script src="js/script.js"></script>
 </body>
 </html>
